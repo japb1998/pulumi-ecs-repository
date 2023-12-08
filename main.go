@@ -37,7 +37,7 @@ func main() {
 		}
 
 		// Private
-		eIp, err := ec2.NewEip(ctx, "elasticIpOne", &ec2.EipArgs{
+		eIp, err := ec2.NewEip(ctx, "elasticIp", &ec2.EipArgs{
 			Domain: pulumi.String("vpc"),
 		})
 		if err != nil {
@@ -45,7 +45,7 @@ func main() {
 		}
 
 		// Private
-		eIpTwo, err := ec2.NewEip(ctx, "elasticIpTwo", &ec2.EipArgs{
+		eIpTwo, err := ec2.NewEip(ctx, "elasticIpSecond", &ec2.EipArgs{
 			Domain: pulumi.String("vpc"),
 		})
 		if err != nil {
