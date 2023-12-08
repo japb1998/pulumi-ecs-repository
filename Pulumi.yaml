@@ -1,0 +1,3 @@
+name: ecs-template-server
+runtime: go
+description: A Go program to deploy a containerized service on AWS ECS with private subnets and ALB
